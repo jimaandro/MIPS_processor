@@ -1,0 +1,12 @@
+[Inputs]
+PC_sel
+PC_LdEn
+Reset
+Clk
+=PC_Immed[31:0]=
+[Outputs]
+=Instr[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel IFSTAGE
+

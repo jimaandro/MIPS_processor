@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="RegisterFile_part1" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALUSTAGE |home|jim|Project|RegisterFile_part1|ALUSTAGE.v</ClosedNode>
+         <ClosedNode>/DECODE |home|jim|Project|RegisterFile_part1|DECODE.v</ClosedNode>
+         <ClosedNode>/DECSTAGE |home|jim|Project|RegisterFile_part1|DECSTAGE.v</ClosedNode>
+         <ClosedNode>/IFSTAGE |home|jim|Project|RegisterFile_part1|IFSTAGE.v</ClosedNode>
+         <ClosedNode>/PROCESSOR |home|jim|Project|RegisterFile_part1|PROCESSOR.v</ClosedNode>
+         <ClosedNode>/PROCESSOR |home|jim|Project|RegisterFile_part1|PROCESSOR.v/DATA_PATH_STAGE - datapath</ClosedNode>
+         <ClosedNode>/PROCESSOR |home|jim|Project|RegisterFile_part1|PROCESSOR.v/DATA_PATH_STAGE - datapath/alustg - ALUSTAGE</ClosedNode>
+         <ClosedNode>/PROCESSOR |home|jim|Project|RegisterFile_part1|PROCESSOR.v/DATA_PATH_STAGE - datapath/decstg - DECSTAGE/registers - registerfile/dec - decoder32</ClosedNode>
+         <ClosedNode>/PROCESSOR |home|jim|Project|RegisterFile_part1|PROCESSOR.v/DATA_PATH_STAGE - datapath/ifstg - IFSTAGE</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/alustg - ALUSTAGE</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/decstg - DECSTAGE</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/decstg - DECSTAGE/registers - registerfile</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/ifstg - IFSTAGE</ClosedNode>
+         <ClosedNode>/decoder32 |home|jim|Project|RegisterFile_part1|decoder32.v</ClosedNode>
+         <ClosedNode>/registerfile |home|jim|Project|RegisterFile_part1|registerfile.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>PROCESSOR (/home/jim/Project/RegisterFile_part1/PROCESSOR.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000010c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000010c0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>PROCESSOR (/home/jim/Project/RegisterFile_part1/PROCESSOR.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>IFSTAGE.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000278000000040101000100000000000000000000000064ffffffff0000008100000000000000040000005100000001000000000000002900000001000000000000008400000001000000000000017a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>IFSTAGE.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e3000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Check Syntax</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000fa000000a601000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALUtest |home|jim|Project|RegisterFile_part1|ALUtest.v</ClosedNode>
+         <ClosedNode>/CONTROL_tb |home|jim|Project|RegisterFile_part1|CONTROL_tb.v</ClosedNode>
+         <ClosedNode>/DECSTAGE |home|jim|Project|RegisterFile_part1|DECSTAGE.v</ClosedNode>
+         <ClosedNode>/IFSTAGE |home|jim|Project|RegisterFile_part1|IFSTAGE.v</ClosedNode>
+         <ClosedNode>/IFSTAGE_tb |home|jim|Project|RegisterFile_part1|IFSTAGE_tb.v</ClosedNode>
+         <ClosedNode>/IFSTAGE_tb |home|jim|Project|RegisterFile_part1|IFSTAGE_tb.v/uut - IFSTAGE</ClosedNode>
+         <ClosedNode>/PROCESSOR_tb |home|jim|Project|RegisterFile_part1|PROCESSOR_tb.v</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/alustg - ALUSTAGE</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/decstg - DECSTAGE</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/decstg - DECSTAGE/registers - registerfile</ClosedNode>
+         <ClosedNode>/datapath |home|jim|Project|RegisterFile_part1|datapath.v/ifstg - IFSTAGE</ClosedNode>
+         <ClosedNode>/dem_test |home|jim|Project|RegisterFile_part1|dem_test.v</ClosedNode>
+         <ClosedNode>/memtest |home|jim|Project|RegisterFile_part1|memtest.v</ClosedNode>
+         <ClosedNode>/registerfile_tb |home|jim|Project|RegisterFile_part1|registerfile_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>PROCESSOR_tb (/home/jim/Project/RegisterFile_part1/PROCESSOR_tb.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000124000000020000000000000000000000000200000064ffffffff000000810000000300000002000001240000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>PROCESSOR_tb (/home/jim/Project/RegisterFile_part1/PROCESSOR_tb.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

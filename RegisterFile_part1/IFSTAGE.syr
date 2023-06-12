@@ -1,0 +1,480 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: IFSTAGE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IFSTAGE.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IFSTAGE"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-fgg484
+
+---- Source Options
+Top Module Name                    : IFSTAGE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/jim/Project/RegisterFile_part1/ROMmem.v" into library work
+Parsing module <ROMmem>.
+Analyzing Verilog file "/home/jim/Project/RegisterFile_part1/registerPC.v" into library work
+Parsing module <registerPC>.
+Analyzing Verilog file "/home/jim/Project/RegisterFile_part1/MUX2_1.v" into library work
+Parsing module <MUX2_1>.
+Analyzing Verilog file "/home/jim/Project/RegisterFile_part1/IFSTAGE.v" into library work
+Parsing module <IFSTAGE>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <IFSTAGE>.
+
+Elaborating module <registerPC>.
+
+Elaborating module <MUX2_1>.
+
+Elaborating module <ROMmem>.
+Reading initialization file \"rom.data\".
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <IFSTAGE>.
+    Related source file is "/home/jim/Project/RegisterFile_part1/IFSTAGE.v".
+    Found 32-bit adder for signal <adder4> created at line 44.
+    Found 32-bit adder for signal <datain1> created at line 48.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <IFSTAGE> synthesized.
+
+Synthesizing Unit <registerPC>.
+    Related source file is "/home/jim/Project/RegisterFile_part1/registerPC.v".
+    Found 32-bit register for signal <Dout>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <registerPC> synthesized.
+
+Synthesizing Unit <MUX2_1>.
+    Related source file is "/home/jim/Project/RegisterFile_part1/MUX2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2_1> synthesized.
+
+Synthesizing Unit <ROMmem>.
+    Related source file is "/home/jim/Project/RegisterFile_part1/ROMmem.v".
+WARNING:Xst:2999 - Signal 'ROM', unconnected in block 'ROMmem', is tied to its initial value.
+    Found 1024x32-bit single-port Read Only RAM <Mram_ROM> for signal <ROM>.
+    Found 32-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <ROMmem> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port Read Only RAM                 : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 2
+ 32-bit register                                       : 2
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <IFSTAGE>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <PC/Dout> prevents it from being combined with the RAM <rom/Mram_ROM> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PCout<11:2>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <rom/Mram_ROM> will be implemented as a BLOCK RAM, absorbing the following register(s): <rom/dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 32-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PCout<11:2>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instr>         |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <IFSTAGE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 1024x32-bit single-port block Read Only RAM           : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 1
+ 32-bit 2-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <PC/Dout_12> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_13> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_14> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_15> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_16> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_17> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_18> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_19> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_20> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_21> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_22> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_23> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_24> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_25> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_26> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_27> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_28> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_29> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_30> of sequential type is unconnected in block <IFSTAGE>.
+WARNING:Xst:2677 - Node <PC/Dout_31> of sequential type is unconnected in block <IFSTAGE>.
+
+Optimizing unit <IFSTAGE> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IFSTAGE, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : IFSTAGE.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 78
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 8
+#      LUT2                        : 13
+#      LUT3                        : 12
+#      MUXCY                       : 20
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 12
+#      FDRE                        : 12
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 47
+#      IBUF                        : 15
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tfgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              12  out of  54576     0%  
+ Number of Slice LUTs:                   34  out of  27288     0%  
+    Number used as Logic:                34  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     34
+   Number with an unused Flip Flop:      22  out of     34    64%  
+   Number with an unused LUT:             0  out of     34     0%  
+   Number of fully used LUT-FF pairs:    12  out of     34    35%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          68
+ Number of bonded IOBs:                  48  out of    296    16%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    116     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 14    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.849ns (Maximum Frequency: 259.784MHz)
+   Minimum input arrival time before clock: 3.590ns
+   Maximum output required time after clock: 5.000ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 3.849ns (frequency: 259.784MHz)
+  Total number of paths / destination ports: 506 / 32
+-------------------------------------------------------------------------
+Delay:               3.849ns (Levels of Logic = 14)
+  Source:            PC/Dout_2 (FF)
+  Destination:       PC/Dout_11 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: PC/Dout_2 to PC/Dout_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   0.650  PC/Dout_2 (PC/Dout_2)
+     INV:I->O              1   0.206   0.000  Madd_adder4_lut<2>_INV_0 (Madd_adder4_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  Madd_adder4_cy<2> (Madd_adder4_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<3> (Madd_adder4_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<4> (Madd_adder4_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<5> (Madd_adder4_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<6> (Madd_adder4_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<7> (Madd_adder4_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<8> (Madd_adder4_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_adder4_cy<9> (Madd_adder4_cy<9>)
+     XORCY:CI->O           2   0.180   0.617  Madd_adder4_xor<10> (adder4<10>)
+     LUT2:I1->O            1   0.205   0.000  Madd_datain1_lut<10> (Madd_datain1_lut<10>)
+     MUXCY:S->O            0   0.172   0.000  Madd_datain1_cy<10> (Madd_datain1_cy<10>)
+     XORCY:CI->O           1   0.180   0.580  Madd_datain1_xor<11> (datain1<11>)
+     LUT3:I2->O            1   0.205   0.000  multip/Mmux_dataout31 (PCin<11>)
+     FDRE:D                    0.102          PC/Dout_11
+    ----------------------------------------
+    Total                      3.849ns (2.002ns logic, 1.847ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 126 / 36
+-------------------------------------------------------------------------
+Offset:              3.590ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       PC/Dout_0 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to PC/Dout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.222   0.933  Reset_IBUF (Reset_IBUF)
+     LUT2:I1->O           12   0.205   0.908  PC/WE_reset_AND_1_o1 (PC/WE_reset_AND_1_o)
+     FDRE:CE                   0.322          PC/Dout_0
+    ----------------------------------------
+    Total                      3.590ns (1.749ns logic, 1.841ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              5.000ns (Levels of Logic = 1)
+  Source:            rom/Mram_ROM2 (RAM)
+  Destination:       Instr<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: rom/Mram_ROM2 to Instr<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA13    1   1.850   0.579  rom/Mram_ROM2 (Instr_31_OBUF)
+     OBUF:I->O                 2.571          Instr_31_OBUF (Instr<31>)
+    ----------------------------------------
+    Total                      5.000ns (4.421ns logic, 0.579ns route)
+                                       (88.4% logic, 11.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.849|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 6.87 secs
+ 
+--> 
+
+
+Total memory usage is 385268 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,6 @@
+verilog isim_temp "ROMmem.v"
+verilog isim_temp "registerPC.v"
+verilog isim_temp "MUX2_1.v"
+verilog isim_temp "IFSTAGE.v"
+verilog isim_temp "IFSTAGE_tb.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

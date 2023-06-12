@@ -1,0 +1,6 @@
+verilog isim_temp "register.v"
+verilog isim_temp "MUX.v"
+verilog isim_temp "decoder32.v"
+verilog isim_temp "registerfile.v"
+verilog isim_temp "registerfile_tb.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

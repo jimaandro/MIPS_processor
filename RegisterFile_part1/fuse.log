@@ -1,0 +1,57 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb_isim_beh.exe" -prj "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb_beh.prj" "work.PROCESSOR_tb" "work.glbl" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/register.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/MUX.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/decoder32.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/ROMmem.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/registerPC.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/registerfile.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/MUX2_1_5b.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/MUX2_1.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/Imm_conv_16_32.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/ALU.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/MEMSTAGE.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/IFSTAGE.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/Dir_or_ZeroF.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/DECSTAGE.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/ALUSTAGE.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/datapath.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/CONTROL.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR.v" into library work
+Analyzing Verilog file "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 83208 KB
+Fuse CPU Usage: 330 ms
+Compiling module registerPC
+Compiling module MUX2_1
+Compiling module ROMmem
+Compiling module IFSTAGE
+Compiling module register
+Compiling module Imm_conv_16_32
+Compiling module MUX2_1_5b
+Compiling module AND_5_input
+Compiling module decoder32
+Compiling module MUX
+Compiling module registerfile
+Compiling module DECSTAGE
+Compiling module ALU
+Compiling module ALUSTAGE
+Compiling module MEMSTAGE
+Compiling module Dir_or_ZeroF
+Compiling module datapath
+Compiling module CONTROL
+Compiling module PROCESSOR
+Compiling module PROCESSOR_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable /home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb_isim_beh.exe
+Fuse Memory Usage: 1692584 KB
+Fuse CPU Usage: 360 ms
+GCC CPU Usage: 70 ms

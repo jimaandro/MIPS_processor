@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb_isim_beh.exe" -prj "/home/ubuntu/Downloads/e/beep/Project/RegisterFile_part1/PROCESSOR_tb_beh.prj" "work.PROCESSOR_tb" "work.glbl" 

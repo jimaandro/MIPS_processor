@@ -1,0 +1,8 @@
+verilog work "register.v"
+verilog work "MUX.v"
+verilog work "decoder32.v"
+verilog work "registerfile.v"
+verilog work "MUX2_1_5b.v"
+verilog work "MUX2_1.v"
+verilog work "Imm_conv_16_32.v"
+verilog work "DECODE.v"

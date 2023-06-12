@@ -1,0 +1,5 @@
+vhdtdtfi -lib work /home/jim/Project/RegisterFile_part1/IFSTAGE.v -lang verilog -prj RegisterFile_part1 -o IFSTAGE.spl -module IFSTAGE -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IFSTAGE.spl /home/jim/Project/RegisterFile_part1/IFSTAGE.sym 
+xst -intstyle ise -ifn "/home/jim/Project/RegisterFile_part1/IFSTAGE.xst" -ofn "/home/jim/Project/RegisterFile_part1/IFSTAGE.syr" 
+xst -intstyle ise -ifn "/home/jim/Project/RegisterFile_part1/IFSTAGE.xst" -ofn "/home/jim/Project/RegisterFile_part1/IFSTAGE.syr" 
+xst -intstyle ise -ifn "/home/jim/Project/RegisterFile_part1/IFSTAGE.xst" -ofn "/home/jim/Project/RegisterFile_part1/IFSTAGE.syr" 

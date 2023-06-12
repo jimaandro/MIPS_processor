@@ -1,0 +1,4 @@
+verilog work "ROMmem.v"
+verilog work "registerPC.v"
+verilog work "MUX2_1.v"
+verilog work "IFSTAGE.v"
